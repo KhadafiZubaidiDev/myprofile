@@ -6,3 +6,6 @@ class Pelatihan(models.Model):
   deskripsi = models.CharField(max_length=255)
   penyelenggara = models.CharField(max_length=255)
   tahun = models.CharField(max_length=4)
+
+  def __str__(self):
+    return f"{self.nama} {self.penyelenggara} {self.tahun}"
